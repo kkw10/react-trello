@@ -1,8 +1,13 @@
 import React from 'react';
+import Router from '~/router';
+import NavBar from '~/components/nav-bar';
 
 const App = () => {
   return (
-    <div>Hello</div>
+    <>
+      <NavBar />
+      <Router />
+    </>
   );
 };
 
