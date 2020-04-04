@@ -1,0 +1,20 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      // error => Regenerator Runtime is not defined
+      "useBuiltIns": "usage"
+    }], 
+    "@babel/preset-react"
+  ],
+  // for styled-components
+  "plugins": [
+    "babel-plugin-styled-components",
+    [
+      "babel-plugin-root-import",
+      {
+        "rootPathSuffix": "./src",
+        "rootPathPrefix": "~/"
+      }      
+    ]
+  ]
+}
